@@ -4,7 +4,7 @@ Layouts play a crucial role in structuring the visual appearance and organizatio
 
 ## Jumpstart Layouts
 
-## Private Primary Layout
+### Private Primary Layout
 
 The Private Primary Layout serves as the main layout for protected routes within your application. It encapsulates the core content, providing a unified structure for authenticated users to navigate the platform.
 
@@ -14,7 +14,7 @@ The Private Primary Layout serves as the main layout for protected routes within
 
 **Customization:** Customize the Private Primary Layout to match your application's branding and style. Modify the layout's structure, color schemes, and design elements using the provided customization options.
 
-## Private Secondary Layout
+### Private Secondary Layout
 
 The Private Secondary Layout is an optional layout that you can use for specific sections or pages within your protected routes. It offers flexibility when you need to deviate from the primary layout structure.
 
@@ -24,7 +24,7 @@ The Private Secondary Layout is an optional layout that you can use for specific
 
 **Customization:** Similar to other layouts, you can fully customize the Private Secondary Layout to align with your application's unique requirements. Refer to the documentation for detailed customization instructions.
 
-## Authentication Layout
+### Authentication Layout
 
 The Authentication Layout is designed exclusively for authentication-related pages, such as login, signup, and password recovery. It ensures a consistent and user-friendly experience during the authentication process.
 
