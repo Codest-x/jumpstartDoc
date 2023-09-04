@@ -57,7 +57,7 @@ If a user forgets their password, they can click the "Forgot Password" link on t
 
 When user fill his email and new credentials for the password Jumpstart will send and email with a code to the registered user to validate is identity.
 
-![Forgot Password](./assets/resetPasswordCode.png)
+![Email Code Confirmation](./assets/resetPasswordCode.png)
 
 Once user put the code that he receive, and click on "Confirm Password Reset" his password would be reset and now he can continue using Jumpstart.
 
