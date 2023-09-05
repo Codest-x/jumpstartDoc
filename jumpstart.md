@@ -34,7 +34,7 @@ The Authentication Accelerator simplifies the implementation of user authenticat
 - [Login](./authentication-accelerator/login.md)
 - [Signup](./authentication-accelerator/signup.md)
 - [Forgot Password](./authentication-accelerator/forgot-password.md)
-- [Logout](./authentication-accelerator/logout.md)
+- Logout
 
 ### States
 
