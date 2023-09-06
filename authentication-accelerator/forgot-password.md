@@ -16,41 +16,13 @@ The "Forgot Password" functionality have some step process:
 
 - **Password Reset Complete**: If the password reset is successful, users can now log in with their new password.
 
+# Requests
+
 
 ### Request Password Reset Code
 
-The user provides their email address, and a request is made to generate a validation code and send it to the user's email address.
-
-```javascript
-accAuthForgotPassword.run({
-  variables: {
-    data: {
-      email: data.email,
-      authProfileId: authInfo.value.authProfileId
-    }
-  }
-}).then(res => {
-  if (res) {
-    accSnackbarState.setValue({
-      open: true,
-      message: "Please check your email for a validation code to reset your password.",
-      type: "success"
-    });
-  }
-})
-```
+The `accAuthForgotPassword` is responsible of start the process, user provides their email address, and a request is made to generate a validation code and send it to the user's email address.
 
 ## Confirm Password Reset
 
-Once the user receives the validation code, they provide it along with their new password to confirm the password reset.
-
-
-```gql
-mutation ResetPasswordConfirm($data: PasswordForgotConfirmInput!) {
-  userPasswordForgotConfirm(
-    data: $data
-  ) {
-    success
-  }
-}
-```
+Once the user receives the validation code, they provide it and the `accAuthForgotPasswordConfirm` is responsible of finish the process, with the password that was entered in the initial step.
