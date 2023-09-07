@@ -90,15 +90,13 @@ The Theme Management Accelerator offers a consistent and visually appealing desi
 
 #### Features
 
-- **Theme Customization**: Customize the color schemes, fonts, and styles of your application.
-- **Dark Mode Support**: Implement dark mode for users who prefer a different look.
+- [Dark Mode Support](./theme-managment-accelerator/theme-managment.md#dark-mode-support): Implement dark mode for users who prefer a different look.
+- [Adaptable Components](./theme-managment-accelerator/theme-managment.md#adaptable-components): Customize components properties like colors, backgrounds, borders and improve your theme look.
+- [Theme Customization](./theme-managment-accelerator/theme-managment.md#theme-customization): Customize the color schemes, fonts, and styles of your application.
 
 #### States
 
-- `accThemePrimaryColor`: State for managing the primary color theme.
-- `accThemeSecondaryColor`: State for managing the secondary color theme.
-- `accThemeFontFamily`: State for specifying the font family.
-- `accThemeDarkMode`: State for enabling and managing dark mode.
+- `accThemeMode`: State for managing the theme mode of the entire application.
 
 The Theme Management Accelerator empowers you to create a visually appealing and user-friendly application. Customize the look and feel of your app to match your brand or design preferences.
 
