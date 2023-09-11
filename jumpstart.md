@@ -84,6 +84,11 @@ The Navigation Accelerator plays a crucial role in providing a seamless user exp
 
 Stay tuned as we provide detailed documentation on how to leverage the Navigation Accelerator effectively.
 
+#### Features
+
+- [Sidebar Control](./navigation-accelerator/sidebar-control.md): Use a impressive sidebar that controls the navigation in your application, allowing the user to have items, subitems and separe in tabs.
+- [Breadcrumbs Managment](./navigation-accelerator/breadcrumbs-managment.md): Use breadcrumbs in the entire application to control the navigation and handle actions of pages.
+
 ### Theme Management Accelerator
 
 The Theme Management Accelerator offers a consistent and visually appealing design for your application. It enables you to easily customize and manage your app's themes and styles. Explore the key features below:
