@@ -46,6 +46,30 @@ The sidebar structure is defined using a structured JSON object. Here's an excer
     ],
     "identifier": "middle"
   },
+  {
+    "items": [
+      {
+        "icon": "Settings",
+        "path": "/settings/team-members",
+        "label": "Settings",
+        "expanded": false,
+        "subitems": [
+          {
+            "icon": "Group",
+            "path": "/settings/team-members",
+            "label": "Team Members",
+            "relatedPaths": [
+              {
+                "path": "/user/:id",
+                "label": "User Profile"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "identifier": "bottom"
+  }
   // ...
 ]
 ```
@@ -55,6 +79,23 @@ The sidebar structure is defined using a structured JSON object. Here's an excer
 - Each sidebar section is represented as an object within the array.
 - The `items` property contains an array of sidebar items, each with properties like `icon`, `path`, `label`, `expanded`, and `subitems`.
 - The `identifier` is a unique identifier for each section.
+
+### Understanding the `relatedPaths` Key
+
+Within the sidebar configuration, the `relatedPaths` key serves a vital role in defining the relationship between different navigation sections. Here's what you need to know:
+
+- **Purpose**: The `relatedPaths` key allows you to establish connections between related sections or pages within your application's navigation.
+
+- **Usage Example**: Consider the scenario in which you have a "Team Members" section within your "Settings" area, as shown in the example configuration. In this case, you might want to provide quick access to individual user profiles from the "Team Members" section.
+
+- **Functionality**: When a user navigates to a specific page represented by a `path`, the `relatedPaths` key defines other sections or pages that are closely related and accessible from that page.
+
+- **Example in Action**: In the given example, when a user is viewing the "Team Members" section (path: `/settings/team-members`) and clicks on a user's profile (path: `/user/:id`), the `relatedPaths` key specifies that the "User Profile" should be included in the breadcrumb trail. This makes it easy for users to navigate back and forth between related sections.
+
+- **Enhanced Navigation**: The `relatedPaths` feature enhances the navigation experience by allowing users to seamlessly switch between related sections without needing to return to a higher-level menu.
+
+By using the `relatedPaths` key judiciously in your sidebar configuration, you can create a more intuitive and user-friendly navigation structure within your application.
+
 
 The sidebar configuration defines the hierarchy of navigation elements, their labels, and links.
 
